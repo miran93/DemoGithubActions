@@ -1,0 +1,13 @@
+<div class="search-bar">
+    <mat-form-field appearance="outline" style="width:97%;">
+        <input matInput #username placeholder="Who are you looking for?" (keyup.enter)="renderBoard()"  autocomplete="off" class="username-input" [value]="inputValue" (input)="inputValue = $event.target.value">
+        <mat-icon matSuffix  (click)="renderBoard()" style="margin-top: 5px;">search</mat-icon>
+    </mat-form-field>
+</div>
+
+<mat-grid-list class="grid" [cols]="breakpoint" (window:resize)="onResize($event)">
+    <mat-grid-tile class="remove-padding" rowspan="1" [colspan]="angularSpan" id='angular-element'>
+    </mat-grid-tile>
+    <mat-grid-tile class="remove-padding"  rowspan="1" [colspan]="reactSpan" id='react-element'>
+    </mat-grid-tile>
+</mat-grid-list> 

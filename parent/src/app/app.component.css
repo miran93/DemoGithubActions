@@ -1,0 +1,51 @@
+.react {
+    /* width: 90%;
+    height: 90%; */
+}
+
+.angular {
+    /* width: 90%; */
+}
+
+.search-bar {
+    height: 56px;
+    justify-content: center;
+    display: flex;
+    padding-top: 15px;
+}
+
+.mat-focused {
+    opacity: 0.6;
+}
+
+.instruction {
+    display: flex;
+    align-items: center;
+}
+
+.username-input {
+    font-size: 14pt;
+}
+
+.grid{
+    display: flex; 
+    width: 100%; 
+    margin-top: 10px; 
+    justify-content: center; 
+}
+
+.tile-react {
+    display: block;
+    flex-direction: row;
+    flex: 4;
+}
+
+.tile-angular {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+.remove-padding{
+    padding-top: 0 !important;
+}
