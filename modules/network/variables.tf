@@ -30,3 +30,13 @@ variable "subnet_cidr_block" {
     type = string
     default = ""
 }
+
+variable "bucket_name" {
+    type = string
+    default = "miran-bucket"
+}
+variable "acl-preference" {
+    type = string
+    default = "private"
+  
+}
