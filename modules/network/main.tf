@@ -44,3 +44,9 @@ resource "aws_route_table_association" "subnet-association" {
   subnet_id      = "${aws_subnet.module_subnet.id}"
   route_table_id = "${aws_route_table.route-table-test-env.id}"
 }
+
+# AWS-S3-BUCKET #
+resource "aws_s3_bucket" "artifactrepo" {
+  bucket = "${var.bucket_name}"
+  acl = "${var.acl-preference}"
+}
